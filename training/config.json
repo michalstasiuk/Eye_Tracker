@@ -1,0 +1,47 @@
+{
+    "type" : "eye_tracker",
+    "model_path" : "./training/eye_tracker.tflite",
+    "dirs_labels" : {
+        "0.1" : 0.1,
+        "0.2" : 0.2,
+        "0.3" : 0.3,
+        "0.4" : 0.4,
+        "0.5" : 0.5,
+        "0.6" : 0.6,
+        "0.7" : 0.7,
+        "0.8" : 0.8,
+        "0.9" : 0.9
+    },
+    "batch_size" : 32,
+    "patience" : 100,
+    "epochs" : 2000,
+    "deleted_data" : [],
+    "training_data" : ["../dataset/eye_tracker/eye_lukasz_1",
+        "../dataset/eye_tracker/eye_me_light1",
+        "../dataset/eye_tracker/eye_me_2",
+        "../dataset/eye_tracker/eye_me_3",
+        "../dataset/eye_tracker/eye_me_light_move_1",
+        "../dataset/eye_tracker/eye_me_move_1",
+        "../dataset/images/test2/",
+        "../dataset/eye_tracker/eye_david_1",
+        "../dataset/eye_tracker/eye_marianna_1/",
+        "../dataset/eye_tracker/eye_marzena_szymon_1",
+        "../dataset/eye_tracker/eye_marzena_1/",
+        "../dataset/eye_tracker/eye_marzena_mama_1/",
+        "../dataset/eye_tracker/eye_marzena_ewelina_1/"
+        ],
+    "validation_data" : [],
+    "test_data" : [],
+    "checkpoint_dir" : "./checkpoints/",
+    "dimmensions" : [
+        64,64
+    ],
+    "filter" : {
+        "sample_period" : 0.04,
+        "cutoff_freq" : 5
+    },
+    "REM_detection" : {
+        "last_angles_count" : 5,
+        "threshold" : 0.5
+    }
+}

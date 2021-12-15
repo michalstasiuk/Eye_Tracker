@@ -1,0 +1,14 @@
+{
+    "eye_tracker" : {
+        "dimmensions" : [64,64],
+        "model_path" : "./training/release/eye_tracker.tflite",
+        "model_type" : "float",
+        "labels" :{
+
+        }
+    },
+    "filter" : {
+        "sample_period" : 0.02,
+        "cutoff_freq" : 20
+    }
+}
